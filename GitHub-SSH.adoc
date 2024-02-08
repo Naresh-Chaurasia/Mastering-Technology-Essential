@@ -65,12 +65,11 @@ Now, your Git Bash is connected to GitHub using SSH. When you interact with your
 
 ---
 
-
 Here's a breakdown of what this command does:
 
 1. `ssh-agent -s`: This command starts the SSH agent and outputs the necessary environment variables to initialize the agent.
-
 2. `eval "$(ssh-agent -s)"`: The `eval` command is used to execute the output of the `ssh-agent -s` command, setting up the environment variables in the current shell session.
+
 
 * By running this command, you ensure that the SSH agent is running and properly configured in your shell session.
 * The agent holds your private SSH key and provides it to Git when needed, eliminating the need to enter your SSH key passphrase repeatedly.
