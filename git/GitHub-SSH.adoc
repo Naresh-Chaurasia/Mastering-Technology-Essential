@@ -3,8 +3,6 @@
 :toclevels: 5
 :sectnums:
 
-image::Git-SSH.png[]
-
 Connecting Git Bash to GitHub using SSH involves several steps. SSH (Secure Shell) is a cryptographic network protocol that allows secure communication between two systems. Here's a step-by-step guide:
 
 === Step 1: Install Git Bash
