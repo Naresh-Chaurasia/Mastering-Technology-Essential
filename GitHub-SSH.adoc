@@ -6,34 +6,40 @@
 Certainly! Connecting Git Bash to GitHub using SSH involves several steps. SSH (Secure Shell) is a cryptographic network protocol that allows secure communication between two systems. Here's a step-by-step guide:
 
 ==== Step 1: Install Git Bash
+
 If you haven't already, download and install Git Bash from the official website: [Git](https://git-scm.com/).
 
 ==== Step 2: Generate SSH Key
-1. Open Git Bash.
-2. Use the following command to generate a new SSH key:
+
+* Open Git Bash.
+* Use the following command to generate a new SSH key:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 Replace "your_email@example.com" with the email address associated with your GitHub account.
-3. Press Enter to accept the default file location.
-4. You may be prompted to enter a passphrase. You can either set one or press Enter to skip.
+
+* Press Enter to accept the default file location.
+* You may be prompted to enter a passphrase. You can either set one or press Enter to skip.
 
 ==== Step 3: Add SSH Key to SSH Agent
-1. Start the SSH agent by running:
+
+* Start the SSH agent by running:
 
 ```bash
 eval "$(ssh-agent -s)"
 ```
 
-2. Add your SSH private key to the SSH agent:
+* Add your SSH private key to the SSH agent:
 
 ```bash
 ssh-add ~/.ssh/id_rsa
 ```
 
 ==== Step 4: Add SSH Key to GitHub
-1. Copy the SSH key to your clipboard:
+
+* Copy the SSH key to your clipboard:
+
 ```bash
 clip < ~/.ssh/id_rsa.pub   # For Windows
 ```
@@ -45,13 +51,14 @@ cat ~/.ssh/id_rsa.pub     # For Linux/Mac, copy manually
 ```
 
 
-2. Go to your GitHub account settings.
-3. Navigate to "SSH and GPG keys."
-4. Click on "New SSH key" or "Add SSH key."
-5. Paste your SSH key into the provided field and give it a meaningful title.
+* Go to your GitHub account settings.
+* Navigate to "SSH and GPG keys."
+* Click on "New SSH key" or "Add SSH key."
+* Paste your SSH key into the provided field and give it a meaningful title.
 
 ==== Step 5: Test the Connection
-1. In Git Bash, run the following command to test the SSH connection:
+
+* In Git Bash, run the following command to test the SSH connection:
 
 ```bash
 ssh -T git@github.com
@@ -59,7 +66,7 @@ ssh -T git@github.com
 
 You might see a warning the first time; type "yes" to continue.
 
-2. If successful, you should see a message confirming the authentication.
+* If successful, you should see a message confirming the authentication.
 
 Now, your Git Bash is connected to GitHub using SSH. When you interact with your repositories, Git will use the SSH key for authentication. This setup is more secure than using passwords and allows for smoother, password-less access to your GitHub repositories.
 
