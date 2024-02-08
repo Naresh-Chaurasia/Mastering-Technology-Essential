@@ -5,11 +5,11 @@
 
 Certainly! Connecting Git Bash to GitHub using SSH involves several steps. SSH (Secure Shell) is a cryptographic network protocol that allows secure communication between two systems. Here's a step-by-step guide:
 
-==== Step 1: Install Git Bash
+=== Step 1: Install Git Bash
 
 If you haven't already, download and install Git Bash from the official website: [Git](https://git-scm.com/).
 
-==== Step 2: Generate SSH Key
+=== Step 2: Generate SSH Key
 
 * Open Git Bash.
 * Use the following command to generate a new SSH key:
@@ -33,7 +33,7 @@ Your identification has been saved in /home/your_username/.ssh/id_rsa.
 Your public key has been saved in /home/your_username/.ssh/id_rsa.pub.
 ----
 
-==== Step 3: Add SSH Key to SSH Agent
+=== Step 3: Add SSH Key to SSH Agent
 
 * Start the SSH agent by running:
 
@@ -47,7 +47,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 
-==== Step 4: Add SSH Key to GitHub
+=== Step 4: Add SSH Key to GitHub
 
 * Copy the SSH key to your clipboard:
 
@@ -67,7 +67,7 @@ cat ~/.ssh/id_rsa.pub     # For Linux/Mac, copy manually
 * Click on "New SSH key" or "Add SSH key."
 * Paste your SSH key into the provided field and give it a meaningful title.
 
-==== Step 5: Test the Connection
+=== Step 5: Test the Connection
 
 * In Git Bash, run the following command to test the SSH connection:
 
@@ -83,7 +83,7 @@ Now, your Git Bash is connected to GitHub using SSH. When you interact with your
 
 ---
 
-*SSH Agent*
+=== What is SSH Agent
 
 The SSH Agent is a program that runs in the background on your local machine and manages SSH keys. Its primary purpose is to securely store and handle private keys, eliminating the need for users to enter passphrases every time they connect to a remote server or perform operations that require authentication.
 
