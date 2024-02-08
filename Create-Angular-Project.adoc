@@ -1,5 +1,0 @@
-= Connect Git Bash to GitHub using SSH
-:toc: left
-:toclevels: 5
-:sectnums:
-
