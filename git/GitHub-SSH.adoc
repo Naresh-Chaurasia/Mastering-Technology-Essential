@@ -17,6 +17,12 @@ If you haven't already, download and install Git Bash from the official website:
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
+Replace "your_email@example.com" with the email address associated with your GitHub account.
+
+* Press Enter to accept the default file location.
+* You may be prompted to enter a passphrase. You can either set one or press Enter to skip.
+
+Here's a sample command and output:
 
 ----
 Generating public/private rsa key pair.
@@ -26,11 +32,6 @@ Enter same passphrase again:
 Your identification has been saved in /home/your_username/.ssh/id_rsa.
 Your public key has been saved in /home/your_username/.ssh/id_rsa.pub.
 ----
-
-Replace "your_email@example.com" with the email address associated with your GitHub account.
-
-* Press Enter to accept the default file location.
-* You may be prompted to enter a passphrase. You can either set one or press Enter to skip.
 
 ==== Step 3: Add SSH Key to SSH Agent
 
