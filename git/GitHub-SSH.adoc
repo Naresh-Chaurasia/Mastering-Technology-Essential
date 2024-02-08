@@ -83,6 +83,10 @@ Now, your Git Bash is connected to GitHub using SSH. When you interact with your
 
 ---
 
+*SSH Agent*
+
+The SSH Agent is a program that runs in the background on your local machine and manages SSH keys. Its primary purpose is to securely store and handle private keys, eliminating the need for users to enter passphrases every time they connect to a remote server or perform operations that require authentication.
+
 Here's a breakdown of what `eval "$(ssh-agent -s)"` command does:
 
 * `ssh-agent -s`: This command starts the SSH agent and outputs the necessary environment variables to initialize the agent.
