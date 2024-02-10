@@ -1,0 +1,80 @@
+= Code Backup with Github
+:toc: left
+:toclevels: 5
+:sectnums:
+
+
+Certainly! Below is a script that you can use as a basis for creating a YouTube video demonstrating the process of checking in code to GitHub using the provided steps:
+
+---
+
+**Video Script: "Git Initialization and First Commit Tutorial"**
+
+---
+
+**Introduction:**
+```
+[Opening Scene]
+[Background Music]
+[You on Camera]
+"Hello everyone! Welcome back to [Your Channel Name]. In today's tutorial, we'll walk through the steps of initializing a Git repository, making the first commit, and pushing it to GitHub. Whether you're a beginner or just need a quick refresher, this video is for you. Let's dive in!"
+```
+
+**Step 1: Creating a New Repository:**
+```
+[Screen Recording]
+1.1 Open your terminal.
+1.2 Navigate to the project directory.
+1.3 Type the following commands:
+    ```
+    echo "# Temp-Del" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    ```
+    [Explain each command]
+    [Show the terminal commands and output]
+```
+
+**Step 2: Setting Up the Main Branch:**
+```
+[Screen Recording]
+2.1 Set the branch to main:
+    ```
+    git branch -M main
+    ```
+    [Explain the purpose of this step]
+    [Show the terminal command and output]
+```
+
+**Step 3: Linking to GitHub:**
+```
+[Screen Recording]
+3.1 Add the GitHub repository as the remote origin:
+    ```
+    git remote add origin git@github.com:Naresh-Chaurasia/Temp-Del.git
+    ```
+    [Explain what a remote is]
+    [Show the terminal command and output]
+```
+
+**Step 4: Pushing to GitHub:**
+```
+[Screen Recording]
+4.1 Push the initial commit to GitHub:
+    ```
+    git push -u origin main
+    ```
+    [Explain how pushing works]
+    [Show the terminal command and output]
+```
+
+**Conclusion:**
+```
+[You on Camera]
+"Great job, you've successfully initialized a Git repository, made your first commit, and pushed it to GitHub! If you found this video helpful, don't forget to like, subscribe, and hit the notification bell for more tutorials. If you have any questions or topics you'd like me to cover, leave a comment below. Happy coding, and I'll see you in the next video!"
+```
+
+---
+
+Feel free to customize the script based on your personal style and add more explanations or details as needed. Don't forget to include visual elements like terminal recordings, on-screen text, and annotations to enhance the viewer's understanding.
